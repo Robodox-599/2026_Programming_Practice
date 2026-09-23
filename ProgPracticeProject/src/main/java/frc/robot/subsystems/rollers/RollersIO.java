@@ -1,15 +1,15 @@
 package frc.robot.subsystems.rollers;
 
-public abstract class RollersIO {
-    
-    protected double rollersVelocityRadPerSec = 0.0;
-    protected double rollersVoltage = 0.0;
-    protected double rollersStatorCurrent = 0.0;
-    protected double rollersSupplyCurrent = 0.0;
-    protected double rollersTemperature = 0.0;
+abstract public class RollersIO {
+    protected final double radPerSecVelocity = 0.0;
+    protected final double temperature = 0.0;
+    protected final double supplyCurrent = 0.0;
+    protected final double voltage = 0.0;
+    protected final double statorCurrent = 0.0;
 
-    public void updateInputs() {}
-    public void setVoltage(double voltage) {}
     public void stop() {}
-}
+    public void updatedInputs() {}
+    public void setVoltage(double voltage) {}  
 
+
+}
